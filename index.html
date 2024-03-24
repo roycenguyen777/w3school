@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      @font-face {
+        font-family: "Bai Sau";
+        src: url("./assets/fonts/UVNBaiSau_R.TTF");
+      }
+
+      p {
+        font-family: "Bai Sau";
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 12px;
+      }
+
+      .menu_icon {
+        display: none;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+        border: 1px solid #000;
+      }
+
+      .one {
+        background-color: red;
+      }
+
+      .two {
+        background-color: blue;
+      }
+
+      .three {
+        background-color: green;
+      }
+
+      .four {
+        background-color: yellow;
+      }
+
+      /* Mobile */
+      @media screen and (max-width: 762px) {
+        /* Selector */
+        .container {
+          flex-direction: column;
+        }
+        .menu_icon {
+          display: block;
+        }
+      }
+
+      /* Tablet */
+      @media screen and (min-width: 763px) and (max-width: 1024px) {
+        .container {
+          justify-content: space-around;
+        }
+
+        .four {
+          background-color: pink;
+        }
+      }
+
+      /* Desktop */
+      @media screen and (min-width: 1025px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="menu_icon">Icon</div>
+
+    <div class="container">
+      <div class="box one"></div>
+      <div class="box two"></div>
+      <div class="box three"></div>
+      <div class="box four"></div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum qui
+      aspernatur sapiente voluptates nemo! Illum aliquid animi in. Aliquid
+      praesentium quia alias text accusantium ww iusto dolorem a.
+    </p>
+    <!-- Ctrl + Space : Gợi ý -->
+
+    Lần đâu tiên sử dụng git:     
+    1/ git --version: Kiểm tra xem đã cài git chưa
+    2/ git config --global user.name "Your Name": Đặt tên cho git
+    3/ git config --global user.email "Your Email": Đặt email cho git
+    
+    Kiểm tra thông tin đã cài đặt git cho dự án chưa:
+    4/ git init: Khởi tạo git
+
+    Các lệnh thường sử dụng:
+    5/ git status: Kiểm tra trạng thái của git
+    6/ git add .: Thêm tất cả các file vào git
+    7/ git commit -m "Your Message": Commit file
+    8/ git push origin master: Đẩy file lên github
+
+    Những trạng thái của git:
+    9/ Untracked: File chưa được theo dõi
+    10/ Unmodified: File không có thay đổi
+    11/ Modified: File đã được thay đổi
+    12/ Staged: File đã được thêm vào git
+    
+    Change -> Staged -> Commit -> Push
+    
+  </body>
+</html>
